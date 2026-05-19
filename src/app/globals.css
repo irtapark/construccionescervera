@@ -1,26 +1,47 @@
 @import "tailwindcss";
 
+@keyframes slow-zoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.15); }
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 30s infinite alternate ease-in-out;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary-blue: #003366;
+  --accent-gold: #C5A059;
+  --accent-gold-hover: #b38f4d;
+  --bg-white: #ffffff;
+  --bg-light: #f4f4f4;
+  --text-dark: #333333;
+  --text-light: #666666;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-white);
+  color: var(--text-dark);
+  font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+}
+
+/* Glassmorphism utility for light mode */
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 51, 102, 0.1);
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #003366 0%, #0055aa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-mesh-light {
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(210, 100%, 98%, 1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(40, 40%, 95%, 0.5) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(210, 100%, 95%, 0.3) 0, transparent 50%);
 }
