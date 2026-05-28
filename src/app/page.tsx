@@ -50,7 +50,7 @@ export default function Home() {
               Estilo de vida mediterráneo
             </span>
             <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tighter leading-[1.1] md:leading-[0.9] text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
-              Tu hogar frente <br className="hidden md:block"/> al mar en Benicarló
+              Tu hogar frente <br /> al mar en Benicarló
             </h1>
             <p className="text-base md:text-xl mb-10 md:text-12 text-white/90 max-w-2xl mx-auto leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
               Viviendas exclusivas de 2 y 3 dormitorios a solo 50 metros de la costa. Calidad, diseño y una ubicación inmejorable desde 143.000 €.
@@ -67,7 +67,7 @@ export default function Home() {
           </motion.div>
         </div>
         
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 animate-bounce opacity-30 hidden md:block">
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 animate-bounce opacity-30 block">
           <div className="w-6 h-10 rounded-full border-2 border-[#003366] flex justify-center p-1">
             <div className="w-1 h-2 bg-[#003366] rounded-full" />
           </div>
@@ -82,7 +82,7 @@ export default function Home() {
               <span className="text-[#C5A059] font-bold tracking-widest uppercase text-[10px] md:text-sm mb-2 md:mb-4 block text-center md:text-left">Catálogo Exclusivo</span>
               <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-[#003366] text-center md:text-left">Últimas Unidades</h2>
             </div>
-            <div className="w-24 h-1 bg-[#C5A059] hidden md:block mb-4" />
+            <div className="w-24 h-1 bg-[#C5A059] mb-4" />
           </div>
           
           <motion.div 
@@ -145,7 +145,7 @@ export default function Home() {
               viewport={{ once: true }}
               className="lg:w-1/2"
             >
-              <h2 className="text-4xl md:text-6xl font-bold mb-6 md:mb-8 tracking-tighter leading-tight text-[#003366]">Construyendo sueños <br className="hidden md:block"/> en la costa</h2>
+              <h2 className="text-4xl md:text-6xl font-bold mb-6 md:mb-8 tracking-tighter leading-tight text-[#003366]">Construyendo sueños <br /> en la costa</h2>
               <p className="text-[#666666] text-lg md:text-xl mb-8 md:mb-8 leading-relaxed">
                 En Construcciones Cervera nos dedicamos a la creación de espacios únicos. Nuestra filosofía se basa en la calidad constructiva, el compromiso con el cliente y la elección de las mejores ubicaciones.
               </p>
@@ -181,7 +181,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 md:gap-20">
             <div>
-              <h2 className="text-4xl md:text-6xl font-bold mb-6 md:mb-10 tracking-tighter text-[#003366]">¿Hablamos de <br className="hidden md:block"/> tu futuro?</h2>
+              <h2 className="text-4xl md:text-6xl font-bold mb-6 md:mb-10 tracking-tighter text-[#003366]">¿Hablamos de <br /> tu futuro?</h2>
               <p className="text-[#666666] text-lg md:text-xl mb-12 md:mb-16 max-w-md">
                 Estamos aquí para resolver tus dudas y ayudarte a encontrar tu próxima vivienda en el Mediterráneo.
               </p>
