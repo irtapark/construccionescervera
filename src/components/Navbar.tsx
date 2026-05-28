@@ -45,6 +45,7 @@ export default function Navbar() {
             <div className="hidden md:flex items-center space-x-1">
               <NavLink href="/" scrolled={scrolled}>Inicio</NavLink>
               <NavLink href="#promociones" scrolled={scrolled}>Promociones</NavLink>
+              <NavLink href="#servicios" scrolled={scrolled}>Servicios</NavLink>
               <NavLink href="#nosotros" scrolled={scrolled}>Nosotros</NavLink>
               <Link 
                 href="#contacto" 
@@ -81,6 +82,7 @@ export default function Navbar() {
                 <div className="flex flex-col space-y-4 py-6 border-t border-[#003366]/10 mt-2">
                   <Link href="/" onClick={() => setIsOpen(false)} className="text-[#333333] font-bold text-lg px-2">Inicio</Link>
                   <Link href="#promociones" onClick={() => setIsOpen(false)} className="text-[#333333] font-bold text-lg px-2">Promociones</Link>
+                  <Link href="#servicios" onClick={() => setIsOpen(false)} className="text-[#333333] font-bold text-lg px-2">Servicios</Link>
                   <Link href="#nosotros" onClick={() => setIsOpen(false)} className="text-[#333333] font-bold text-lg px-2">Nosotros</Link>
                   <Link 
                     href="#contacto" 

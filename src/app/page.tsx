@@ -1,6 +1,7 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
+import Services from "@/components/Services";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
@@ -132,6 +133,8 @@ export default function Home() {
         </div>
       </section>
 
+      <Services />
+
       {/* --- NOSOTROS SECTION --- */}
       <section id="nosotros" className="py-20 md:py-32 px-4 md:px-6 overflow-hidden bg-white">
         <div className="max-w-7xl mx-auto">
@@ -193,19 +196,25 @@ export default function Home() {
             <div className="bg-white rounded-[2rem] md:rounded-[3rem] p-6 md:p-16 shadow-2xl border border-[#003366]/10 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-[#003366]/5 blur-[100px] -mr-32 -mt-32" />
               <form className="relative z-10 space-y-6 md:space-y-8">
-                <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+                <div className="space-y-6 md:space-y-8">
                   <div className="space-y-2 md:space-y-3">
-                    <label className="text-xs font-bold text-[#666666] uppercase tracking-widest">Nombre</label>
-                    <input type="text" className="w-full bg-[#f4f4f4] border border-[#003366]/10 px-6 py-3 md:py-4 rounded-xl md:rounded-2xl focus:ring-2 focus:ring-[#C5A059] focus:border-transparent outline-none transition-all text-[#333333] text-sm md:text-base" placeholder="Tu nombre" />
+                    <label htmlFor="nombre" className="text-xs font-bold text-[#666666] uppercase tracking-widest">Nombre</label>
+                    <input id="nombre" type="text" className="w-full bg-[#f4f4f4] border border-[#003366]/10 px-6 py-3 md:py-4 rounded-xl md:rounded-2xl focus:ring-2 focus:ring-[#C5A059] focus:border-transparent outline-none transition-all text-[#333333] text-sm md:text-base" placeholder="Tu nombre" required />
                   </div>
-                  <div className="space-y-2 md:space-y-3">
-                    <label className="text-xs font-bold text-[#666666] uppercase tracking-widest">Email</label>
-                    <input type="email" className="w-full bg-[#f4f4f4] border border-[#003366]/10 px-6 py-3 md:py-4 rounded-xl md:rounded-2xl focus:ring-2 focus:ring-[#C5A059] focus:border-transparent outline-none transition-all text-[#333333] text-sm md:text-base" placeholder="tu@email.com" />
+                  <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+                    <div className="space-y-2 md:space-y-3">
+                      <label htmlFor="email" className="text-xs font-bold text-[#666666] uppercase tracking-widest">Email</label>
+                      <input id="email" type="email" className="w-full bg-[#f4f4f4] border border-[#003366]/10 px-6 py-3 md:py-4 rounded-xl md:rounded-2xl focus:ring-2 focus:ring-[#C5A059] focus:border-transparent outline-none transition-all text-[#333333] text-sm md:text-base" placeholder="tu@email.com" required />
+                    </div>
+                    <div className="space-y-2 md:space-y-3">
+                      <label htmlFor="telefono" className="text-xs font-bold text-[#666666] uppercase tracking-widest">Teléfono</label>
+                      <input id="telefono" type="tel" className="w-full bg-[#f4f4f4] border border-[#003366]/10 px-6 py-3 md:py-4 rounded-xl md:rounded-2xl focus:ring-2 focus:ring-[#C5A059] focus:border-transparent outline-none transition-all text-[#333333] text-sm md:text-base" placeholder="Tu teléfono" required />
+                    </div>
                   </div>
                 </div>
                 <div className="space-y-2 md:space-y-3">
-                  <label className="text-xs font-bold text-[#666666] uppercase tracking-widest">Mensaje</label>
-                  <textarea rows={4} className="w-full bg-[#f4f4f4] border border-[#003366]/10 px-6 py-3 md:py-4 rounded-xl md:rounded-2xl focus:ring-2 focus:ring-[#C5A059] focus:border-transparent outline-none transition-all text-[#333333] text-sm md:text-base" placeholder="¿En qué podemos ayudarte?"></textarea>
+                  <label htmlFor="mensaje" className="text-xs font-bold text-[#666666] uppercase tracking-widest">Mensaje</label>
+                  <textarea id="mensaje" rows={4} className="w-full bg-[#f4f4f4] border border-[#003366]/10 px-6 py-3 md:py-4 rounded-xl md:rounded-2xl focus:ring-2 focus:ring-[#C5A059] focus:border-transparent outline-none transition-all text-[#333333] text-sm md:text-base" placeholder="¿En qué podemos ayudarte?" required></textarea>
                 </div>
                 <button type="submit" className="w-full bg-[#003366] text-white py-4 md:py-5 rounded-xl md:rounded-2xl font-bold text-base md:text-lg hover:bg-[#002244] transition-all shadow-xl active:scale-95">
                   Enviar Mensaje
@@ -217,7 +226,7 @@ export default function Home() {
       </section>
       
       <footer className="py-12 md:py-16 px-6 border-t border-[#003366]/5 text-center text-[#666666] bg-white">
-        <Image src="/logo-blanco.png" alt="Logo" width={140} height={40} className="mx-auto mb-6 md:mb-8 brightness-0 opacity-40 w-32 md:w-40" />
+        <Image src="/logo-blanco.png" alt="Logo Construcciones Cervera" width={140} height={40} className="mx-auto mb-6 md:mb-8 brightness-0 opacity-40 w-32 md:w-40" />
         <p className="text-[10px] md:text-sm font-medium">© {new Date().getFullYear()} Construcciones Cervera S.L. — Todos los derechos reservados.</p>
       </footer>
     </main>
